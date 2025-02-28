@@ -188,9 +188,7 @@
         <div class="row justify-content-center mt-4">
           <div class="col-md-5 col-10">
             <div class="card text-center text-bg-light mb-5">
-              <div class="card-header">
-                Akad Nikah
-              </div>
+              <div class="card-header">Akad Nikah</div>
               <div class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
@@ -204,15 +202,14 @@
                 </div>
               </div>
               <div class="card-footer">
-                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
               </div>
             </div>
           </div>
           <div class="col-md-5 col-10">
             <div class="card text-center text-bg-light">
-              <div class="card-header">
-                Resepsi
-              </div>
+              <div class="card-header">Resepsi</div>
               <div class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
@@ -226,9 +223,25 @@
                 </div>
               </div>
               <div class="card-footer">
-                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana cinta kami bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              temporibus cupiditate labore explicabo natus. Repellendus!
+            </p>
           </div>
         </div>
       </div>
@@ -255,6 +268,19 @@
           minutes: { singular: "menit", plural: "menit" },
           seconds: { singular: "detik", plural: "detik" },
         },
+      });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
       });
     </script>
   </body>
