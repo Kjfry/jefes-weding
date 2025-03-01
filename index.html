@@ -43,7 +43,9 @@
         <h1>Kristian & Vonica</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
+          >Lihat Undangan</a
+        >
       </main>
     </section>
 
@@ -317,44 +319,142 @@
             <span>Memori Kisah Kami</span>
             <h2>Gallery Foto</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, consectetur.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
+              consectetur.
             </p>
           </div>
 
-          <div class="row row-cols-lg-4 row-cols-md-3 row-col-sm-2 row-col-1 justify-content-center">
+          <div
+            class="row row-cols-lg-4 row-cols-md-3 row-col-sm-2 row-col-1 justify-content-center"
+          >
             <div class="col mt-3">
-              <a href="img/gallery/1.png" data-toggle="lightbox" data-caption="Kristian & Vonica" data-gallery="mygallery">
-                <img src="img/gallery/thumbnail/1.png" alt="FF" class="img-fluid w-100 rounded">
+              <a
+                href="img/gallery/1.png"
+                data-toggle="lightbox"
+                data-caption="Kristian & Vonica"
+                data-gallery="mygallery"
+              >
+                <img
+                  src="img/gallery/thumbnail/1.png"
+                  alt="FF"
+                  class="img-fluid w-100 rounded"
+                />
               </a>
             </div>
             <div class="col mt-3">
-              <a href="https://picsum.photos/id/300/1200/768" data-toggle="lightbox" data-caption="Kristian & Vonica" data-gallery="mygallery">
-                <img src="https://picsum.photos/id/300/300/400" alt="FF" class="img-fluid w-100 rounded">
+              <a
+                href="https://picsum.photos/id/300/1200/768"
+                data-toggle="lightbox"
+                data-caption="Kristian & Vonica"
+                data-gallery="mygallery"
+              >
+                <img
+                  src="https://picsum.photos/id/300/300/400"
+                  alt="FF"
+                  class="img-fluid w-100 rounded"
+                />
               </a>
             </div>
             <div class="col mt-3">
-              <a href="https://picsum.photos/id/301/1200/768" data-toggle="lightbox" data-caption="Kristian & Vonica" data-gallery="mygallery">
-                <img src="https://picsum.photos/id/301/300/400" alt="FF" class="img-fluid w-100 rounded">
+              <a
+                href="https://picsum.photos/id/301/1200/768"
+                data-toggle="lightbox"
+                data-caption="Kristian & Vonica"
+                data-gallery="mygallery"
+              >
+                <img
+                  src="https://picsum.photos/id/301/300/400"
+                  alt="FF"
+                  class="img-fluid w-100 rounded"
+                />
               </a>
             </div>
             <div class="col mt-3">
-              <a href="https://picsum.photos/id/302/1200/768" data-toggle="lightbox" data-caption="Kristian & Vonica" data-gallery="mygallery">
-                <img src="https://picsum.photos/id/302/300/400" alt="FF" class="img-fluid w-100 rounded">
+              <a
+                href="https://picsum.photos/id/302/1200/768"
+                data-toggle="lightbox"
+                data-caption="Kristian & Vonica"
+                data-gallery="mygallery"
+              >
+                <img
+                  src="https://picsum.photos/id/302/300/400"
+                  alt="FF"
+                  class="img-fluid w-100 rounded"
+                />
               </a>
             </div>
             <div class="col mt-3">
-              <a href="https://picsum.photos/id/304/1200/768" data-toggle="lightbox" data-caption="Kristian & Vonica" data-gallery="mygallery">
-                <img src="https://picsum.photos/id/304/300/400" alt="FF" class="img-fluid w-100 rounded">
+              <a
+                href="https://picsum.photos/id/304/1200/768"
+                data-toggle="lightbox"
+                data-caption="Kristian & Vonica"
+                data-gallery="mygallery"
+              >
+                <img
+                  src="https://picsum.photos/id/304/300/400"
+                  alt="FF"
+                  class="img-fluid w-100 rounded"
+                />
               </a>
             </div>
             <div class="col mt-3">
-              <a href="https://picsum.photos/id/305/1200/768" data-toggle="lightbox" data-caption="Kristian & Vonica" data-gallery="mygallery">
-                <img src="https://picsum.photos/id/305/300/400" alt="FF" class="img-fluid w-100 rounded">
+              <a
+                href="https://picsum.photos/id/305/1200/768"
+                data-toggle="lightbox"
+                data-caption="Kristian & Vonica"
+                data-gallery="mygallery"
+              >
+                <img
+                  src="https://picsum.photos/id/305/300/400"
+                  alt="FF"
+                  class="img-fluid w-100 rounded"
+                />
               </a>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>
+              Isi form di bawah ini untuk melakukan konfirmasi kehadiran.
+            </p>
+          </div>
+          </div>
+
+          <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
+          action="https://script.google.com/macros/s/AKfycbwhkYIVC-L4xsNv-tak-UEaHxeB3Mtnrbo4R3Cxd02fltMV3V6SeUyFg5CjxLNBB8d2xA/exec">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="jumlah" class="form-label">Jumlah</label>
+                <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" lenght="1" value="1">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="status" class="form-label">Konfirmasi</label>
+                <select name="status" id="status" class="form-select">
+                  <option selected>Pilih salah satu</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12" style="margin-top: 35px;">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
     </section>
 
     <!-- Bootstrap -->
@@ -393,6 +493,32 @@
       offcanvas.addEventListener("hidden.bs.offcanvas", function () {
         stickyTop.style.overflow = "hidden";
       });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+
+      function disableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function () {
+        window.scrollTo(scrollTop, scrollLeft);
+      }
+
+      rootElement.style.scrollBehavior = 'auto';
+    }
+
+    function enableScroll() {
+      window.onscroll = function () { }
+      rootElement.style.scrollBehavior = 'smooth';
+      localStorage.setItem('opened', 'true');
+    }
+
+      if (!localStorage.getItem("opened")) {
+        disableScroll();
+      }
+      // disableScroll();
     </script>
   </body>
 </html>
