@@ -421,41 +421,112 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          </div>
+        </div>
+
+        <form
+          id="my-form"
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbwhkYIVC-L4xsNv-tak-UEaHxeB3Mtnrbo4R3Cxd02fltMV3V6SeUyFg5CjxLNBB8d2xA/exec"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input
+                type="number"
+                class="form-control"
+                id="jumlah"
+                name="jumlah"
+                min="1"
+                max="5"
+                lenght="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
             <p>
-              Isi form di bawah ini untuk melakukan konfirmasi kehadiran.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              voluptatibus veniam sapiente rem ad nisi!.
             </p>
           </div>
-          </div>
+        </div>
 
-          <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
-          action="https://script.google.com/macros/s/AKfycbwhkYIVC-L4xsNv-tak-UEaHxeB3Mtnrbo4R3Cxd02fltMV3V6SeUyFg5CjxLNBB8d2xA/exec">
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="jumlah" class="form-label">Jumlah</label>
-                <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" lenght="1" value="1">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="status" class="form-label">Konfirmasi</label>
-                <select name="status" id="status" class="form-select">
-                  <option selected>Pilih salah satu</option>
-                  <option value="Hadir">Hadir</option>
-                  <option value="Tidak Hadir">Tidak Hadir</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-12" style="margin-top: 35px;">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </form>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                123456789 - Kristian
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">Saweria</div>
+                <img
+                  src="img/saweria.png"
+                  alt="Saweria qr"
+                  class="img-thumbnail"
+                  width="150"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block"
+              >&copy; 2025 Jefes Wedding. All Rights Reserved.</small
+            >
+            <small class="block"
+              >Design by <a href="https://instagram.com/">@Kristian</a>.</small
+            >
+
+            <ul >
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap -->
     <script
@@ -499,26 +570,44 @@
       const rootElement = document.querySelector(":root");
 
       function disableScroll() {
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-      window.onscroll = function () {
-        window.scrollTo(scrollTop, scrollLeft);
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
       }
 
-      rootElement.style.scrollBehavior = 'auto';
-    }
-
-    function enableScroll() {
-      window.onscroll = function () { }
-      rootElement.style.scrollBehavior = 'smooth';
-      localStorage.setItem('opened', 'true');
-    }
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        localStorage.setItem("opened", "true");
+      }
 
       if (!localStorage.getItem("opened")) {
         disableScroll();
       }
       // disableScroll();
+    </script>
+
+    <!-- Sheets -->
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("konfirmasi kehadiran berhasil terkirim!");
+          });
+        });
+      });
     </script>
   </body>
 </html>
