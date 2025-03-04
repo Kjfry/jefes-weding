@@ -84,7 +84,7 @@ body {
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
-  padding-top: 15rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
 }
 
@@ -183,7 +183,7 @@ body {
 .story,
 .gallery,
 .rsvp,
- .gifts{
+.gifts {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -356,7 +356,33 @@ footer li {
   margin: 0.5rem;
 }
 
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
 
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* Meia Query */
 /* Extra Large */
@@ -374,6 +400,19 @@ footer li {
 
   .simply-countdown > .simply-section {
     padding: 70px;
+  }
+
+  .home {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    min-height: 90vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: rem;
+  }
+
+  .home .couple {
+    margin-top: 75px;
   }
 
   .home .heart {
@@ -426,6 +465,19 @@ footer li {
     text-align: center;
   }
 
+  .home {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    min-height: 90vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: rem;
+  }
+
+  .home .couple {
+    margin-top: 75px;
+  }
+
   .timeline li .timeline-image {
     width: 140px;
     height: 140px;
@@ -441,6 +493,19 @@ footer li {
   .simply-countdown > .simply-section {
     padding: 45px;
     margin: 3px;
+  }
+
+  .home {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    min-height: 90vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: rem;
+  }
+
+  .home .couple {
+    margin-top: 50px;
   }
 
   .timeline li .timeline-image {
